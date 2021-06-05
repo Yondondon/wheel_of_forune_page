@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<title>Wheel of Fortune</title>
+ 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+ 	<link rel="stylesheet" href="css/main.css">
+ </head>
+<body>
+  <div class="main_wrap">
+    <div class="wheelOfFortune">
+      <canvas id="wheel" width="450" height="450"></canvas>
+      <div class="spin_button main_spin_btn" id="spin_btn">SPIN</div>
+    </div>
+  </div>
+
+  <div class="modal_overlay"></div>
+  <div class="result_popup">
+    <div class="result_popup__header">
+      <div class="popup_close_btn" id="result_popup_close_btn"></div>
+    </div>
+    <div class="result_popup__body">
+      <img src="img/thinking.svg" class="result_popup__img" alt="Thinking">
+      <div class="result_popup__text_block"></div>
+      <div class="result_popup__spin_btn_wrap">
+        <div class="result_popup__spin_btn spin_button" id="popup_spin_btn">Spin</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
